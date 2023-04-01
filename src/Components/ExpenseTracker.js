@@ -51,17 +51,17 @@ function ExpenseTracker() {
         }
     }, []);
 
-    // useEffect(() => {
-    //     calculateExpenses();
-    // }, [transactions]);
+    useEffect(() => {
+        calculateExpenses();
+    }, [transactions]);
 
     return (
         <div className='container'>
             <h1>Finance Manager</h1>
             <Expense income={income} expense={expense} />
+            <TransactionForm onNewTransaction={handleAddNewTransaction} />
             <TransactionHistory transactions={transactions}
                 onDeleteTransaction={handleDeleteTransaction} />
-            <TransactionForm onNewTransaction={handleAddNewTransaction} />
         </div>
     )
 }
