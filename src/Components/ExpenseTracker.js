@@ -38,7 +38,7 @@ function ExpenseTracker() {
     }
 
     const handleDeleteTransaction = id => {
-        const newTransactions = transactions.filter((item) => item.id != id);
+        const newTransactions = transactions.filter((item) => item.id !== id);
         setTransactions(newTransactions);
     }
 
@@ -51,9 +51,9 @@ function ExpenseTracker() {
         }
     }, []);
 
-    useEffect(() => {
-        calculateExpenses();
-    }, [transactions]);
+    // useEffect(() => {
+    //     calculateExpenses();
+    // }, [transactions]);
 
     return (
         <div className='container'>
