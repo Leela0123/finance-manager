@@ -4,14 +4,6 @@ import Expense from './Expense';
 import TransactionHistory from './TransactionHistory';
 import TransactionForm from './TransactionForm';
 
-import { uniqueId } from '../utils';
-
-// Aggregator component/container component
-
-const transactionData = [
-   
-];
-
 function ExpenseTracker() {
 
     const [income, setIncome] = useState(0);
