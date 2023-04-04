@@ -3,7 +3,7 @@ import React from 'react';
 function Expense({ income, expense }) {
     return (
         <div className='card'>
-            <h1>Your Balance</h1>
+            <h2>Your Balance</h2>
             <div className='balance-val'>₹{income - expense}</div>
             <div className='row-expense'>
                 <div className='col col-income'>
